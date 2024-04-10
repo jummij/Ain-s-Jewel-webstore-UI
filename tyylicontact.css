@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.671);
+  color: #695338;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #8f6f5f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e07f98;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+:root {
+  background-image: url(kuvat/annie-spratt-HB-Kf9WLy_0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+}
+header {
+  border-bottom: solid rgb(97, 78, 68) 1px;
+}
+
+header img {
+  vertical-align: middle;
+  width: 150px;
+}
+
+#paavalikko ul {
+  padding-left: 0px;
+}
+#paavalikko li {
+  display: inline-block;
+  padding: 10px;
+}
+
+#paavalikko a {
+  color: #343334;
+  text-decoration: none;
+  font-size: 20px;
+}
+#paavalikko a:hover {
+  color: teal;
+}
+#paavalikko a.active {
+  color: palevioletred;
+}
+
+.text {
+  text-align: center;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 560px) {
+  :root {
+    background-position: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .responsive {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+  }
+
+  header a.icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: black;
+    font-size: 2em;
+    padding-top: 30px;
+  }
+
+  #paavalikko li {
+    display: block;
+    text-align: left;
+    border: none;
+    font-size: 20px;
+  }
+  #paavalikko {
+    border-bottom: solid 1px rgb(255, 226, 235);
+  }
+}
+
+@media only screen and (min-width: 561px) {
+  header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+  }
+  header nav {
+    margin-left: auto;
+  }
+
+  header a.icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
